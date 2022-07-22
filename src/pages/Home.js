@@ -81,6 +81,10 @@ function Home() {
   return (
     <div>
       <div className='container mx-auto'>
+        <h1 className='text-end cursor-pointer' onClick={() => {
+          localStorage.clear();
+          navigate('/login')
+        }}>Logout</h1>
         <div className='flex justify-between items-center my-4'>
           <h1 className='font-bold text-4xl text-slate-700'>Data Users</h1>
           <div>
